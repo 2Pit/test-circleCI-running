@@ -1,0 +1,29 @@
+owner: spekaframework
+repo: spek
+description: >
+  Spek 2.x is a complete rewrite of Spek with Kotlin multiplatform support in mind.
+  The DSL is also reworked into two distinct styles: specification and gherkin.
+tags:
+  - framework
+  - test
+  - specification
+  - gherkin
+filters:
+  branches:
+    only: 2.x
+samples:
+  - path: /samples/android    # !
+    build_system: gradle      # !
+    tags: Android     # optional
+    title: Android    # optional
+  - path: /samples/jvm
+    build_system: gradle
+    title: Jvm
+  - path: /samples/maven
+    build_system: mvn
+    tags: mvn
+    title: Spek Maven Sample
+  - path: /samples/multiplatform
+    build_system: gradle
+    tags: multiplatform
+    title: Multiplatform
